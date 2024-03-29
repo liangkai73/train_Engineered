@@ -3,8 +3,8 @@ import axios from 'axios'
 import { NetworkHandler } from './networkHandle'
 
 const netInstance = axios.create({
-  // baseURL: 'https://api.github.com/',
-  baseURL: import.meta.env.VITE_BASE_API,
+  baseURL: 'https://api.github.com/',
+  // baseURL: import.meta.env.VITE_BASE_API,
   timeout: 20000
   // headers: {'X-Custom-Header': 'foobar'}
 })
