@@ -9,7 +9,7 @@ export default function Navbar({ type = 'popular' }) {
     <div className='flex_r_s mt-10 text-[20px] font-[600] ml-10'>
       <p
         onClick={() => {
-          linkTo('/')
+          linkTo('/train_Engineered/')
         }}
         className={`mr-3 cursor-pointer ${type == 'popular' && 'text-[red]'}`}
       >
@@ -17,7 +17,7 @@ export default function Navbar({ type = 'popular' }) {
       </p>
       <p
         onClick={() => {
-          linkTo('/battle')
+          linkTo('/train_Engineered/battle')
         }}
         className={`mr-3 cursor-pointer  ${type == 'battle' && 'text-[red]'}`}
       >

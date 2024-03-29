@@ -9,7 +9,7 @@ export default defineConfig({
     host: 'localhost',
     port: 8080,
     proxy: {
-      'https://liangkai73.github.io/train_Engineered/api': {
+      '/api': {
         target: 'https://api.github.com',
         changeOrigin: true,
         rewrite: path => path.replace(/^\/api/, '')

@@ -2,7 +2,7 @@
  * @Author: lanck.xie
  * @Date: 2024-03-27 14:50:19
  * @Last Modified by: lanck.xie
- * @Last Modified time: 2024-03-28 23:35:43
+ * @Last Modified time: 2024-03-29 14:35:08
  */
 
 import net from '@/utils/request'
@@ -15,7 +15,7 @@ import { PopularApi } from '../config-api'
  */
 function getGithubSearchList(params: popular.searchParamsType) {
   return net
-    .get(PopularApi.getGithubSearchList, { params, headers: { 'Cache-Control': 'max-age=1800' } })
+    .get(PopularApi.getGithubSearchList, { params })
     .then(res => {
       return Promise.resolve((res as any).items)
     })

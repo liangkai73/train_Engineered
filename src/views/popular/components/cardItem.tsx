@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-
+import Img from '@/assets/placeholder.png'
 import SvgIcon from '@/components/icon'
 
 export default function CardItem(props: any) {
@@ -35,7 +35,7 @@ export default function CardItem(props: any) {
             <img
               ref={itemRef}
               className='aspect-auto object-cover w-full h-full'
-              src='./src/assets/placeholder.png'
+              src={Img}
               data-src={data.owner.avatar_url}
               alt=''
             />
