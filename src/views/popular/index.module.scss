@@ -1,0 +1,17 @@
+
+.page-view{
+	width: 100vw;
+	height: 100vh;
+	padding: 10px 20px;
+	overflow: auto;
+	.page-head{
+   margin-top: 10px;
+	}
+	.page-body{
+		width: 100%;
+	}
+	.card-item{
+		background: #ccc;
+		padding: 20px;
+	}
+}
