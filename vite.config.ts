@@ -21,6 +21,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src')
     }
   },
+  base: '/train_Engineered',
   build: {
     // 输出目录
     outDir: 'dist',
@@ -30,7 +31,7 @@ export default defineConfig({
     cssCodeSplit: true,
     // 指定 rollup 插件
     rollupOptions: {
-      input: 'src/main.tsx',
+      input: 'index.html',
       output: {
         entryFileNames: '[name].[hash].js',
         chunkFileNames: 'chunks/[name].[hash].js',
