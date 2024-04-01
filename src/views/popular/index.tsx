@@ -31,8 +31,6 @@ export default function Popular() {
   // effect => type
   useEffect(() => {
     if (cacheArrRef.current[type].length > 0) {
-      console.log(type)
-      console.log(cacheArrRef.current)
       setList(cacheArrRef.current[type])
     } else {
       const queryStr = type == 'all' ? 'stars:>1' : `stars:>1 language:${type}`

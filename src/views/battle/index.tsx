@@ -1,10 +1,9 @@
 import SvgIcon from '@/components/icon'
 import Navbar from '@/layout/navBar'
 import { Button, Input, Space } from 'antd'
+import { useState } from 'react'
 
 export default function Battle() {
-  function handleGetWinner() {}
-
   return (
     <div>
       <Navbar type='battle'></Navbar>
@@ -39,7 +38,12 @@ export default function Battle() {
               <p>Player1</p>
               <div className='w-full flex_r_s'>
                 <Space.Compact style={{ width: '100%' }}>
-                  <Input defaultValue='github username' />
+                  <Input
+                    defaultValue='github username'
+                    onChange={() => {
+                      seta
+                    }}
+                  />
                   <Button
                     type='primary'
                     onClick={() => {
