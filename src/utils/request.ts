@@ -27,17 +27,25 @@ netInstance.interceptors.response.use(
   },
   error => {
     // 请求失败，处理错误
+    let str
     if (error.response) {
       // 请求已发出，服务器用状态码响应
+      str = '数据请求失败：' + error.response.data.message
       console.error('数据请求失败，状态码：', error.response.status)
     } else if (error.request) {
       // 请求已发出但没有收到响应
+      str = '请求发送错误：' + error.request
       console.error('请求发送错误：', error.request)
     } else {
+      str = '错误：' + error.message
       // 在设置请求时出现错误
       console.error('错误：', error.message)
     }
-    return Promise.reject(error)
+    // messageApi.open({
+    //   type: 'error',
+    //   content: str
+    // })
+    return Promise.reject(str)
   }
 )
 

@@ -24,6 +24,18 @@ function getGithubSearchList(params: popular.searchParamsType) {
     })
 }
 
+function getGithubUser(name: string) {
+  return net
+    .get(PopularApi.getUser + '?q=' + name)
+    .then(res => {
+      return Promise.resolve((res as any).items[0])
+    })
+    .catch(err => {
+      return Promise.reject(err)
+    })
+}
+
 export default {
-  getGithubSearchList
+  getGithubSearchList,
+  getGithubUser
 }

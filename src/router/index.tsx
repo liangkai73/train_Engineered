@@ -5,7 +5,7 @@ import Battle from '@/views/battle'
 import BattleResult from '@/views/battle/result'
 const routers = createBrowserRouter([
   {
-    path: '/train_Engineered',
+    path: '/train_Engineered/',
     element: <Popular />
   },
   {

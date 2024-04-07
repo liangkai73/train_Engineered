@@ -7,5 +7,6 @@
 
 // 获取列表
 export const PopularApi = {
-  getGithubSearchList: 'search/repositories'
+  getGithubSearchList: 'search/repositories',
+  getUser: 'search/repositories'
 }
