@@ -52,7 +52,7 @@ export default function Battle() {
     setIsresult(false)
   }
 
-  const keydownfn = function (e) {
+  const keydownfn = function (e: any) {
     if (e.keyCode == 13) {
       document.getElementById('sure-btn')?.click()
     }
